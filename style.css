@@ -103,7 +103,7 @@ body{
     border: none;
     border-radius: 3px;
     color: #fff;
-    background: yellow;
+    background: rgb(0, 255, 47);
     transition: all 3s;
 }
 
