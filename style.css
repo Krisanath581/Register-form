@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins";
 }
 
 body{
@@ -70,7 +72,7 @@ body{
     border: solid 1px black;
     outline: none;
 }
-.user-input-box input:is(:focus,:valid){
+.user-input-box input{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -85,6 +87,7 @@ body{
 
 .form-submit-btn{
     margin: 15px 0;
+    
 }
 
 .form-submit-btn input{
@@ -96,11 +99,13 @@ body{
     font-weight: 600;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right, red,blue);
+    /* background: linear-gradient(to right, rgb(0, 208, 255),blue); */
+    background-color: rgb(56, 162, 194);
     cursor: pointer;
     transition: 0.3s;
+    color: #fff;
 }
 
 .form-submit-btn input:hover{
-    background: linear-gradient(to right, rgb(16, 165, 23),rgb(9, 183, 214));
+    background: linear-gradient(to right, rgb(9, 183, 214) , rgb(179, 223, 231));
 }

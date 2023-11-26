@@ -9,49 +9,55 @@
   <body>
     <div class="container">
         <h1 class="form-title">Registration</h1>
-        <form action="#">
+        <form action="#" onsubmit="myFunction()">
             <div class="main-user-info">
                 <div class="user-input-box">
                     <label for="fullName">Full Name</label>
                     <input type="text"
                             id="fullName" 
                             name="fullName"
-                            placeholder="Enter you name">
+                            placeholder="Enter Your Name"
+                            required>
                 </div>
                 <div class="user-input-box">
                     <label for="username">Username</label>
                     <input type="text"
                             id="username" 
                             name="username"
-                            placeholder="Enter Username">
+                            placeholder="Enter Username"
+                            required>
                 </div>
                 <div class="user-input-box">
                     <label for="email">Email</label>
                     <input type="email"
                             id="email" 
                             name="email"
-                            placeholder="Enter Email">
+                            placeholder="Enter Email"
+                            required>
                 </div>
                 <div class="user-input-box">
-                    <label for="phonenumber">Phone number</label>
+                    <label for="phonenumber">Phone Number (optional)</label>
                     <input type="tel"
                             id="phonenumber" 
                             name="phonenumber"
-                            placeholder="Enter phonenumber">         
+                            placeholder="0812345678"
+                            pattern="[0-9]{10}">         
                 </div>
                 <div class="user-input-box">
                     <label for="password">Password</label>
                     <input type="password"
                             id="password" 
                             name="password"
-                            placeholder="Enter password">
+                            placeholder="Enter Password"
+                            required>
                 </div>
                 <div class="user-input-box">
-                    <label for="confirmpassword">Confirmpassword</label>
+                    <label for="confirmpassword">Confirm Password</label>
                     <input type="password"
                             id="confirmpassword" 
                             name="confirmpassword"
-                            placeholder="Enter confirmpassword">
+                            placeholder="Enter Confirm Password"
+                            required>
                 </div>
             </div>
             <div class="gender-details-box">
@@ -61,7 +67,7 @@
                     <label for="male">Male</label>
                     <input type="radio" name="gender" id="female">
                     <label for="female">Female</label>
-                    <input type="radio" name="gender" id="Prefer">
+                    <input type="radio" name="gender" id="Prefer" checked>
                     <label for="Prefer">Prefer not to say</label>
                 </div>
             </div>
@@ -70,5 +76,6 @@
             </div>
         </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
