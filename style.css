@@ -109,3 +109,7 @@ body{
 .form-submit-btn input:hover{
     background: linear-gradient(to right, rgb(9, 183, 214) , rgb(179, 223, 231));
 }
+
+p{
+    color: red;
+}
